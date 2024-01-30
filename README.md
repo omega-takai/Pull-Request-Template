@@ -5,7 +5,7 @@
 
 ## Let's make a pull request !
 
-- [Release Pull Request](/compare/main...develop?quick_pull=1&template=release.md&title=Release+20240201-1)
+- [Release Pull Request](https://github.com/omega-takai/Pull-Request-Template/compare/main...develop?quick_pull=1&template=release.md&title=Release+20240201-1)
 
 ```
 https://github.com/omega-takai/Pull-Request-Template/compare/main...develop?quick_pull=1&template=release.md&title=Release+20240201-1
