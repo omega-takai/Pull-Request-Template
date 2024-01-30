@@ -5,6 +5,12 @@
 
 ## Let's make a pull request !
 
+- [Release Pull Request](/compare/main...develop?quick_pull=1&template=release.md&title=Release+20240201-1)
+
+```
+https://github.com/omega-takai/Pull-Request-Template/compare/main...develop?quick_pull=1&template=release.md&title=Release+20240201-1
+```
+
 ## References
 
 * [クエリ パラメーターを使って pull request を作成する - GitHub Docs](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/using-query-parameters-to-create-a-pull-request)
