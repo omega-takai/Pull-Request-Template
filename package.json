@@ -1,0 +1,17 @@
+{
+  "name": "pull-request-template",
+  "version": "0.1.0",
+  "description": "クエリパラメーターを使って Pull Request を作成することを試してみるリポジトリです",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omega-takai/Pull-Request-Template.git"
+  },
+  "author": "TAKAI Tomonari",
+  "bugs": {
+    "url": "https://github.com/omega-takai/Pull-Request-Template/issues"
+  },
+  "homepage": "https://github.com/omega-takai/Pull-Request-Template#readme"
+}
