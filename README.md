@@ -19,5 +19,4 @@ https://github.com/omega-takai/Pull-Request-Template/compare/main...develop?quic
 
 * [クエリ パラメーターを使って pull request を作成する - GitHub Docs](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/using-query-parameters-to-create-a-pull-request)
 * [リポジトリ用のプルリクエストテンプレートの作成 - GitHub Docs](https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
-* [リポジトリ用のプルリクエストテンプレートの作成 - GitHub Docs](https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
 * [pull request の作成 - GitHub Docs](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui)
