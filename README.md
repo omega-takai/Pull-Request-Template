@@ -5,7 +5,10 @@
 
 ## Let's make a pull request !
 
-- [Release Pull Request](https://github.com/omega-takai/Pull-Request-Template/compare/main...develop?quick_pull=1&template=release.md&title=Release+20240201-1)
+[![Button]][Link] 
+
+[Link]: https://github.com/omega-takai/Pull-Request-Template/compare/main...develop?quick_pull=1&template=release.md&title=Release+20240201-1 'Make a Release Pull Request'
+[Button]: https://img.shields.io/badge/Release_Pull_Request_-37a779?style=for-the-badge
 
 ```
 # Example Url
