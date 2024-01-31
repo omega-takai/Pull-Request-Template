@@ -1,3 +1,3 @@
 ## src/componentsプルリクエストテンプレート
 
-src/componentsディレクトリに対してトリガーされるテンプレート
+src/componentsディレクトリ閲覧時に表示されるテンプレート
