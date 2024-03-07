@@ -1,0 +1,25 @@
+name: Creating A Tag
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+env:
+  TAG_NAME: 'release_$(TZ=Asia/Tokyo date +%Y%m%d%H%M%S)'
+
+jobs:
+  create_tag:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: |
+          echo ${{ github.event.pull_request.head.ref }}
+          echo ${{ github.event.pull_request.merged }}
+      - run: |
+          echo "$TAG_NAME"
+          git tag $TAG_NAME
+          git push origin $TAG_NAME
