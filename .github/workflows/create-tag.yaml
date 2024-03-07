@@ -6,20 +6,27 @@ on:
     branches:
       - main
 
-env:
-  TAG_NAME: 'release_$(TZ=Asia/Tokyo date +%Y%m%d%H%M%S)'
-
 jobs:
-  create_tag:
+  constants:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
+    outputs:
+      TAG_NAME: ${{ steps.set_constants.outputs.tag_name }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - id: set_constants
+        run: |
+          echo "tag_name=release_$(TZ=Asia/Tokyo date +%Y%m%d%H%M%S)" >> $GITHUB_OUTPUT
+
+  create_tag:
+    runs-on: ubuntu-latest
+    needs: [constants]
+    steps:
+      - uses: actions/checkout@v4
       - run: |
           echo ${{ github.event.pull_request.head.ref }}
           echo ${{ github.event.pull_request.merged }}
       - run: |
-          echo "$TAG_NAME"
-          git tag $TAG_NAME
-          git push origin $TAG_NAME
+          echo ${{ needs.constants.outputs.tag_name }}
+          git tag ${{ needs.constants.outputs.tag_name }}
+          git push origin ${{ needs.constants.outputs.tag_name }}
