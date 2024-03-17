@@ -1,15 +1,13 @@
 name: Creating A Tag
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - main
 
 jobs:
   constants:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true
     outputs:
       TAG_NAME: ${{ steps.set_constants.outputs.tag_name }}
     steps:
@@ -23,10 +21,8 @@ jobs:
     needs: [constants]
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          echo ${{ github.event.pull_request.head.ref }}
-          echo ${{ github.event.pull_request.merged }}
-      - run: |
+      - name: Create tag
+        run: |
           echo ${{ needs.constants.outputs.tag_name }}
           git tag ${{ needs.constants.outputs.tag_name }}
           git push origin ${{ needs.constants.outputs.tag_name }}
