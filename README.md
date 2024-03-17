@@ -7,7 +7,7 @@
 
 <div align="center">
 
-[![PrButton]][PrLink]  [![NoteButton]][NoteLink] 
+[![PrButton]][PrLink]  [![PrDefaultButton]][PrDefaultLink]  [![PrAlertButton]][PrAlertLink]  [![NoteButton]][NoteLink] 
 
 </div>
 
@@ -25,6 +25,12 @@ https://github.com/omega-takai/Pull-Request-Template/compare/main...develop?quic
 
 [PrLink]: https://github.com/omega-takai/Pull-Request-Template/compare/main...develop?quick_pull=1&template=release.md&title=Release+YYYYMMDD-1
 [PrButton]: https://img.shields.io/badge/Make_a_Release_Pull_Request_-37a779?style=for-the-badge
+
+[PrDefaultLink]: https://github.com/omega-takai/Pull-Request-Template/compare/main...develop?quick_pull=1&title=Default+Template
+[PrDefaultButton]: https://img.shields.io/badge/Make_a_Release_Pull_Request_-3c7170?style=for-the-badge
+
+[PrAlertLink]: https://github.com/omega-takai/Pull-Request-Template/compare/main...develop?quick_pull=1&template=alerts.md&title=Other+Template
+[PrAlertButton]: https://img.shields.io/badge/Make_a_Release_Pull_Request_-25b7c0?style=for-the-badge
 
 [NoteLink]: https://github.com/omega-takai/Pull-Request-Template/releases/new?target=main
 [NoteButton]: https://img.shields.io/badge/Make_a_Release_Note_-4169e1?style=for-the-badge
